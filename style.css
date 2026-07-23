@@ -1,0 +1,423 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: Roboto, Arial, sans-serif;
+  font-size: 14px;
+}
+
+body {
+  background-color: #0f0f0f;
+}
+
+.header > .left > .menu {
+  width: 26px;
+  height: 30px;
+  cursor: pointer;
+  filter: brightness(0) invert(1);
+}
+
+.youtube-logo-text {
+  fill: white;
+}
+
+.center > .busqueda > i {
+  filter: brightness(0) invert(1);
+}
+
+button {
+  fill: white;
+  color: white;
+}
+
+i {
+  width: 24px;
+  height: 24px;
+  cursor: pointer;
+}
+
+.columna {
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+}
+
+.fila {
+  display: flex;
+}
+
+.header {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  padding: 8px 16px;
+}
+
+.right {
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  gap: 20px;
+}
+
+.left {
+  gap: 13px;
+  display: flex;
+  align-items: center;
+}
+
+.left > button {
+  border-radius: 100%;
+  border: none;
+  background-color: transparent;
+}
+
+.left > button > .menu {
+  filter: brightness(0) invert(1);
+  padding: 8px;
+}
+
+.left > button:hover {
+  background-color: rgba(128, 128, 128, 0.37);
+  border-radius: 100%;
+}
+
+.left > .logo-yt {
+  padding-bottom: 4px;
+}
+
+.right > .notifications {
+  border: transparent;
+  background-color: transparent;
+  border-radius: 100%;
+}
+
+.center > .busqueda > input {
+  flex: 1;
+  height: 40px;
+  padding-left: 18px;
+  background-color: #121212;
+  color: white;
+  font-size: 16px;
+  border: 1px solid #303030;
+  border-right: none;
+  border-radius: 40px 0 0 40px;
+  outline: none;
+  width: 520px;
+}
+
+.busqueda > .lupa {
+  height: 40px;
+  width: 72px;
+  background-color: #222222;
+  border: 1px solid #303030;
+  border-radius: 0 40px 40px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.busqueda {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+.busqueda > .lupa > svg {
+  height: 24px;
+  width: 24px;
+  fill: white;
+}
+
+.center > .microphone {
+  width: 20px;
+  height: 20px;
+  border-radius: 100%;
+  background-color: #222222;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  fill: transparent;
+  padding: 20px;
+}
+
+.center > .busqueda > .microphone > i {
+  width: 40px;
+  height: 40px;
+  border: none;
+  cursor: pointer;
+  font-size: 20px;
+  opacity: 0.5;
+}
+
+.center {
+  display: flex;
+  gap: 18px;
+}
+
+.right > .plus {
+  background-color: #222222;
+  border-radius: 25px;
+  padding: 10px 14px;
+  color: white;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+
+.right > .plus > p {
+  font-weight: 700;
+}
+
+.right > i {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  filter: brightness(0) invert(1);
+}
+
+.header-content {
+  display: grid;
+  grid-template-columns: 70px 1fr;
+  width: 100%;
+}
+
+.sidebar > button {
+  background-color: #0f0f0f;
+  border: none;
+  padding: 16px 0px 14px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 64px;
+  height: 74px;
+  gap: 7px;
+}
+
+.sidebar > button:hover {
+  background-color: rgba(255, 255, 255, 0.082);
+  border-radius: 15px;
+}
+
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+  box-sizing: border-box;
+  padding-left: 2px;
+  flex-shrink: 0;
+}
+
+.sidebar > button > p {
+  font-size: 10px;
+}
+
+.nav {
+  display: flex;
+  align-items: start;
+  gap: 12px;
+  padding: 7px 19px;
+  white-space: nowrap;
+}
+
+.nav > button {
+  padding: 8px 12px;
+  background-color: #222222;
+  border: none;
+  border-radius: 9px;
+  font-weight: 500;
+}
+
+.content {
+  min-width: 0;
+  padding: 8px 24px;
+  flex: 1;
+}
+
+.nav > .Todos {
+  color: black;
+  background-color: white;
+}
+
+.content > .videos {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+  margin-top: 20px;
+  width: 90vw;
+}
+
+.imagen img {
+  width: 100%;
+  border-radius: 12px;
+  height: auto;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+}
+
+.content > .videos > .columna {
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+}
+
+.content > .videos > .columna > .info1 {
+  display: grid;
+  grid-template-columns: 1fr 24px;
+  gap: 24px;
+  margin-top: 10px;
+  min-width: 0;
+}
+
+.content > .videos > .columna > .info1 > .icono-p {
+  display: flex;
+  align-items: start;
+  gap: 10px;
+  min-width: 0;
+}
+
+.content > .videos > .columna > .info1 > .icono-p > .icono1 {
+  flex-shrink: 0;
+}
+
+.content > .videos > .columna > .info1 > .icono-p > .icono1 > img {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.content > .videos > .columna > .info1 > .icono-p > .Parrafo1 {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+  flex: 1;
+  min-width: 0;
+}
+
+.content > .videos > .columna > .info1 > .icono-p > .Parrafo1 > h4 {
+  display: flex;
+  white-space: normal;
+  min-width: 0;
+  color: #f1f1f1;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 1.4;
+  margin-bottom: 2px;
+}
+
+.content > .videos > .columna > .info1 > .icono-p > .Parrafo1 > p {
+  color: rgba(255, 255, 255, 0.698);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.content > .videos > .columna > .info1 > .Puntos1 > .tres-puntos {
+  background-color: transparent;
+  border: none;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  display: flex;
+  padding: 2px;
+}
+
+.header > .left > .logo-yt-telefono{
+  display: flex;
+}
+
+.header> .center > .busqueda{
+  display: none;
+}
+
+.header > .center > .microphone{
+  display: none;
+}
+
+.content > .videos > .columna > .info1 > .Puntos1 > .tres-puntos:hover {
+  background-color: rgba(255, 255, 255, 0.249);
+}
+
+.content > .videos > .columna > .info1 > .Puntos1 > .tres-puntos > svg {
+  object-fit: cover;
+}
+
+.header > .right > .plus:hover{
+  background-color: rgba(255, 255, 255, 0.249);
+}
+
+.header > .right > .notifications:hover{
+    background-color: rgba(255, 255, 255, 0.249);
+}
+
+.center > .microphone:hover{
+  background-color:  rgba(255, 255, 255, 0.249);;
+}
+
+.header  > .right > .lupa-movil{
+  height: 40px;
+  width: 72px;
+  background-color: transparent;
+  border: none;
+}
+
+.header > .left > .logo-yt{
+  display: none;
+}
+
+.header-content > .sidebar{
+  display: none;
+}
+
+@media only screen and (min-width: 768px){
+.header> .center > .busqueda{
+  display: flex;
+}
+.header > .center > .microphone{
+  display: flex;
+}
+.header-content > .sidebar{
+  display: flex;
+}
+.header > .left > .logo-yt{
+  display: flex;
+}
+.header  > .right > .lupa-movil{
+  display:none;
+}
+
+.content > .videos {
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  gap: 20px;
+  margin-top: 20px;
+  width: 100%;
+}
+
+.header > .left > .logo-yt-telefono{
+  display:none;
+}
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
