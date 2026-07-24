@@ -378,6 +378,11 @@ i {
   display: none;
 }
 
+.header > .left > .logo-yt-telefono{
+  width: 110px;
+  height: auto;
+}
+
 @media only screen and (min-width: 768px){
 .header> .center > .busqueda{
   display: flex;
