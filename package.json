@@ -1,0 +1,13 @@
+{
+  "name": "copia-youtube-andres",
+  "version": "2.0.0",
+  "private": true,
+  "description": "Demo educativa responsive de YouTube con HTML, CSS y JavaScript.",
+  "scripts": {
+    "start": "node scripts/serve.js",
+    "test": "node --test tests/catalog.test.js",
+    "check": "node --check catalog.js && node --check app.js && node --test tests/catalog.test.js",
+    "build": "node scripts/build.js"
+  },
+  "engines": { "node": ">=22" }
+}
