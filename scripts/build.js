@@ -1,0 +1,10 @@
+'use strict';
+const { mkdirSync, copyFileSync, cpSync } = require('node:fs');
+const { resolve } = require('node:path');
+const root = resolve(__dirname, '..');
+const output = resolve(root, 'dist');
+mkdirSync(output, { recursive: true });
+for (const file of ['index.html', 'style.css', 'app.js', 'catalog.js']) copyFileSync(resolve(root, file), resolve(output, file));
+cpSync(resolve(root, 'images'), resolve(output, 'images'), { recursive: true });
+require('node:fs').writeFileSync(resolve(output, '.nojekyll'), '');
+console.log('Sitio estático preparado en dist/');
